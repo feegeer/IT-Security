@@ -25,6 +25,6 @@ if __name__ == '__main__':
     chosen_values = ''.join(
         [str(bin(int(s_tables[k][i_values[k]][j_values[k]]))[2:].zfill(4)) for k in range(0, len(i_values))])
 
-    encoded_str = ''.join([chosen_values[int(x) - 1] for x in p])
-    encoded = [hex(int(encoded_str[i:i + 4], 2)) for i in range(0, len(encoded_str), 4)]
-    print(encoded)
+    encrypted_str = ''.join([chosen_values[int(x) - 1] for x in p])
+    encrypted = [hex(int(encrypted_str[i:i + 4], 2)) for i in range(0, len(encrypted_str), 4)]
+    print(encrypted)
