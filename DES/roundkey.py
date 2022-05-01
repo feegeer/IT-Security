@@ -1,9 +1,3 @@
-# TODO: generalize with *args
-def xor(e_r, k):
-    xored = [str(bin(int(e_r[i], 2) ^ int(k[i], 2))[2:].zfill(6)) for i in range(0, len(e_r))]
-    return xored
-
-
 # list comprehension heaven
 if __name__ == '__main__':
 
