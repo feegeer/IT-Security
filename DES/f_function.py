@@ -1,6 +1,6 @@
+
 # list comprehension heaven
 if __name__ == '__main__':
-
     r = ''.join([str(bin(int(x, base=16))[2:].zfill(8)) for x in '37-CC-AF-11'.split('-')])
     k = ''.join([str(bin(int(x, base=16))[2:].zfill(8)) for x in '14-0E-1F-33-BB-0A'.split('-')])
     k = [k[i:i + 6] for i in range(0, len(k), 6)]
@@ -27,4 +27,4 @@ if __name__ == '__main__':
 
     encoded_str = ''.join([chosen_values[int(x) - 1] for x in p])
     encoded = [hex(int(encoded_str[i:i + 4], 2)) for i in range(0, len(encoded_str), 4)]
-    print(encoded)
+    print(''.join(encoded).upper())
