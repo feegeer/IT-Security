@@ -20,14 +20,18 @@ if __name__ == '__main__':
           '44 49 39 56 34 53 ' \
           '46 42 50 36 29 32'.split(' ')
 
+    # Permutation 1
     c = ''.join([key[int(x) - 1] for x in pc1_c])
     d = ''.join([key[int(x) - 1] for x in pc1_d])
 
+    # Rotation TODO: Generalize number of rounds
     c1 = c[1:] + c[:1]
     d1 = d[1:] + d[:1]
 
-    c1d1 = c1+d1
+    c1d1 = c1 + d1
 
+    # Permutation 2
     k1_str = ''.join([c1d1[int(x) - 1] for x in pc2])
+
     k1 = [hex(int(k1_str[i:i + 4], 2))[2:] for i in range(0, len(k1_str), 4)]
     print(''.join(k1).upper())
