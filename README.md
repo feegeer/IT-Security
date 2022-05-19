@@ -1,3 +1,3 @@
 # IT-Security
-Some (parts of) encryption algorithms
+(parts of) encryption algorithms
 
