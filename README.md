@@ -1,2 +1,3 @@
 # IT-Security
-Some (parts of) encryption algorithms written (mainly) in Python
+Some (parts of) encryption algorithms written in Python
+
