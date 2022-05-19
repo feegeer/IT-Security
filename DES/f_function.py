@@ -1,6 +1,6 @@
 # list comprehension heaven
-# Author EmmaF
-# Check out my Github Repo: https://github.com/feegeer/IT-Security
+# Author Emma F
+# Check out my GitHub Repo: https://github.com/feegeer/IT-Security
 
 if __name__ == '__main__':
 
@@ -35,7 +35,7 @@ if __name__ == '__main__':
     chosen_values = ''.join(
         [str(bin(int(s_tables[index][i_values[index]][j_values[index]]))[2:].zfill(4)) for index in range(0, len(i_values))])
 
-    # Apply permutation function P(L)
-    encoded_str = ''.join([chosen_values[int(x) - 1] for x in p])
-    encoded = [hex(int(encoded_str[i:i + 4], 2))[2:] for i in range(0, len(encoded_str), 4)]
-    print(''.join(encoded).upper())
+    # Apply permutation function P(L) --> f
+    f_string = ''.join([chosen_values[int(x) - 1] for x in p])
+    f = [hex(int(f_string[i:i + 4], 2))[2:] for i in range(0, len(f_string), 4)]
+    print(''.join(f).upper())
